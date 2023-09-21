@@ -1,0 +1,10 @@
+<h3>SIAMO SULLA ROTTA 1</h3>
+<hr />
+<h3>You are {{ logIn ? '' : ' not ' }} logged in!</h3>
+<button class="btn btn-primary" (click)="setLogged()">Log in</button>
+
+<div class="m-3">
+  <a class="p-3" [routerLink]="['child1']">Go to Child 1</a>
+  <a class="p-3" [routerLink]="['child2']">Go to Child 2</a>
+</div>
+<router-outlet></router-outlet>
